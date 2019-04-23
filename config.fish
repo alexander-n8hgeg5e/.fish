@@ -37,3 +37,8 @@ if test (hostname) = dusteater
         set -x DISPLAY esadc:0
     end
 end
+
+set file $HOME"/.prefix_vars"
+test -f $file ; and eval $file
+set -e file
+

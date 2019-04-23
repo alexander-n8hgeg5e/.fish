@@ -1,7 +1,0 @@
-# This file contains fish universal variable definitions.
-# VERSION: 3.0
-SETUVAR --export PULSE_SERVER:
-SETUVAR __fish_init_2_39_8:\x1d
-SETUVAR __fish_init_2_3_0:\x1d
-SETUVAR __fish_init_3_x:\x1d
-SETUVAR fish_key_bindings:fish_default_key_bindings
