@@ -39,6 +39,6 @@ if test (hostname) = dusteater
 end
 
 set file $HOME"/.prefix_vars"
-test -f $file ; and eval $file
+test -f $file ; and source $file
 set -e file
 
