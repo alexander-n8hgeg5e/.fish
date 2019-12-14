@@ -2,21 +2,21 @@ function fish_prompt --description 'Prompt ausgeben'
 	set -l last_status $status
 
     # User
-    set_color $fish_color_user
+    set_color green
     echo -n (whoami)
-    set_color normal
+    set_color yellow
 
     echo -n '@'
 
     # Host
-    set_color $fish_color_host
+    set_color green
     echo -n (prompt_hostname)
-    set_color normal
+    set_color white
 
     echo -n ':'
 
     # PWD
-    set_color $fish_color_cwd
+    set_color yellow
     echo -n (prompt_pwd)
     set_color normal
 
@@ -27,7 +27,17 @@ function fish_prompt --description 'Prompt ausgeben'
     if not test $last_status -eq 0
         set_color $fish_color_error
     end
-
-    echo -n '➤ '
+    set_color green
+    echo -n '➤'
+    set_color yellow
+    echo -n '➤'
+    set_color red
+    echo -n '➤'
+    set_color magenta
+    echo -n '➤'
+    set_color blue
+    echo -n '➤'
+    set_color cyan
+    echo -n '>'
     set_color normal
 end

@@ -1,0 +1,1 @@
+test -q DISPLAY;and test (string length $DISPLAY) -gt 0;or test (string length $argv[1]) -gt 0;and set -x DISPLAY :$argv[0];or set -x DISPLAY :0;and xset r rate 120 60;or set -x DISPLAY :1;and xset r rate 120 60;or set -x DISPLAY :2;and xset r rate 12060;or set -x DISPLAY :3;and xset r rate 120 60;or set -x DISPLAY :4; and xset r rate 120 60  
