@@ -9,3 +9,5 @@ if string match -rq 'izbs*|iamcms-mze-*' $hostnamE
 		eval set -x $a[1] $a[2]
 	end
 end
+
+set -x COMPLETION_HELPER_FUNCTIONS_DIR ~/.config/fish/completions
