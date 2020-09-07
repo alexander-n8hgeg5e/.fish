@@ -2,14 +2,14 @@ function fish_prompt --description 'Prompt ausgeben'
 	set -l last_status $status
 
     # User
-    set_color green
+    set_color brgreen
     echo -n (whoami)
     set_color yellow
 
     echo -n '@'
 
     # Host
-    set_color green
+    set_color brgreen
     echo -n (prompt_hostname)
     set_color white
 
@@ -27,17 +27,38 @@ function fish_prompt --description 'Prompt ausgeben'
     if not test $last_status -eq 0
         set_color $fish_color_error
     end
-    set_color green
-    echo -n '➤'
-    set_color yellow
-    echo -n '➤'
-    set_color red
-    echo -n '➤'
-    set_color magenta
-    echo -n '➤'
-    set_color blue
-    echo -n '➤'
-    set_color cyan
-    echo -n '>'
+    set colors \
+    #"00ff80 brcyan" \
+    #"00ffff brcyan" \
+    #"0080ff brcyan" \
+    #"0000ff brblue" \
+    #"8000ff brmagenta" \
+    #"ff00ff brmagenta" \
+    #"00ff00 brgreen" \
+    #"ff0000 brred" \
+    #"ff0000 brred" \
+    #"00ff00 brgreen" \
+    #"ff8000 bryellow"  \
+    #"ffff00 bryellow" \
+    #"80ff00 bryellow" \
+    #"00ff00 brgreen" \
+
+    #for color in $colors
+    #        eval set_color $color
+    #        echo -n '➤ ' ;end
+
+    #set_color -r brgreen
+    #echo -n -- ■
+    #echo -n \>
+    #set_color -r brgreen
+    #echo -n \>
+    set_color -r brgreen
+    echo -n '>>'
     set_color normal
-end
+    set_color brgreen
+    echo -n '>'
+
+    set_color normal 
+    end
+
+# vim: syntax=fish :
