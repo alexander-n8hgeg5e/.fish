@@ -1,5 +1,6 @@
 #fish Copyright © 2005-2009 Axel Liljencrantz. fish is released under the GNU General Public License, version 2.
 
+source "$COMPLETION_HELPER_FUNCTIONS_DIR"/function_git_files.fish
 source "$COMPLETION_HELPER_FUNCTIONS_DIR"/function_git_ranges.fish
 source "$COMPLETION_HELPER_FUNCTIONS_DIR"/function_git_diff_opt.fish
 
