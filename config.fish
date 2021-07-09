@@ -1,5 +1,4 @@
 umask 027
-set -x hostnamE (hostname)
 
 #if string match -rq 'something*|some-thing-other-*' $hostnamE
 #    umask 0077
