@@ -2,8 +2,13 @@ function fish_prompt --description 'Prompt ausgeben'
 	set -l last_status $status
 
     # User
-    set_color brgreen
-    echo -n (whoami)
+    if test (id -u) -eq 0
+        set_color brred
+        echo -n root
+    else
+        set_color brgreen
+        echo -n me
+    end
     set_color yellow
 
     echo -n '@'
